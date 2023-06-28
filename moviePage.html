@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MoviePage</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+      <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template moviePage Css -->
+    <link rel="stylesheet" href="assets/css/moviePage.css" />
+  
+  </head>
+  <body>
+    
+    <!-- ======= Header ======= -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-d">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a href="#" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <i class="bi bi-film"></i>
+        <h1> <a href="/index.html">MovRec</a></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Latest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="upcoming.html">Upcoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mylist.html">My List</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <!-- <li class="searchbar"> -->
+          <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search for Movies">
+            <a class="search-btn" href="#">
+              <!-- Seach Icon -->
+              <i class="bi bi-search"></i>
+            </a>
+          </div>
+          <!-- </li> -->
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <a href="index.html">
+          <button class="btn btn-success" type="submit">Logout</button>
+          </a>
+        </form>
+      </div>
+    </div>
+    </header>
+  </nav>
+    
+  <div id="rating">
+    <section class="transformers-area">
+      <div class="container">
+        <div class="transformers-box">
+          <div class="row flexbox-center">
+            <div class="col-lg-5 text-lg-left text-center">
+              <div class="transformers-content">
+                <img  src="" alt="about" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="messageDiv text-success "></div>
+
+              <div class="transformers-content">
+                <h2>The Transformers</h2>
+                <ul>
+                  <li>
+                    <div class="transformers-left">Genre:</div>
+                    <div class="transformers-right">
+                      <a href="#">Sci-Fic</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Writer:</div>
+                    <div class="transformers-right">
+                      Dirgha Khadka, Niraj Kadel
+                    </div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Director:</div>
+                    <div class="transformers-right">Dipendra K. Khanal</div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Time:</div>
+                    <div class="transformers-right">190m</div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Release:</div>
+                    <div class="transformers-right">2018-07-22</div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Language:</div>
+                    <div class="transformers-right">Nepali, Nepal</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex">
+              <button id="bookmark" class="bookmark-icon">
+                <i class="fas fa-bookmark watchlist-icon position-absolute" style="top: 10px; right: 10px;"></i>
+              </button>
+              <button id="remove" class="bookmark-icon">
+                <i class="fas fa-bookmark watchlist-icon position-absolute" style="top: 10px; right: 25px;"></i>
+              </button>
+            </div>
+              <div class="container">
+                <div class="details-content" style="position: relative;">
+                  <div class="details-overview">
+                    <h2>Description</h2>
+                    <p class="description">
+                    </p>
+                  </div>
+                      <form id="rating">
+                          <div class="rating-col">
+                            <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <h5>Have you watched it?</h5>    
+                            <p>Rate the movie:</p>
+                          </div>
+                          <div style="display: flex; justify-content: center;">
+                            <div class="rating" style=" margin-top: 100px;">
+                              <input type="radio" name="star" id="star1" value="5">
+                              <label for="star1"></label>
+                              <input type="radio" name="star" id="star2" value="4">
+                              <label for="star2"></label>
+                              <input type="radio" name="star" id="star3" value="3">
+                              <label for="star3"></label>
+                              <input type="radio" name="star" id="star4" value="2">
+                              <label for="star4"></label>
+                              <input type="radio" name="star" id="star5" value="1">
+                              <label for="star5"></label>
+                            </div>
+                          
+                       
+                              <button type="button" name="submit" id="rate_btn" class="input-submits px-4" style="background-color: red;color: white;padding: 10px; width: 200px; height: 48px; margin-top: 80px;"> Rate</button>
+                            </div>
+                            </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </div>
+  </body>
+</html>
+
+
+<script src="assets/js/request.js"></script>
+  <script src="assets/js/get_movie.js"></script>
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/rating.js"></script>
+
+<script>
+  const getMovieById = async () => {
+  const movieId=localStorage.getItem('movieId')
+  let req = await request(
+    "GET",
+    `http://localhost:9595/movie/read/${movieId}`,
+    true,
+  );
+
+  let data = req.data;
+  
+  document.querySelector(".transformers-content img").src = `http://localhost:9595/image/${movieId}`;
+  document.querySelector(".transformers-content h2").textContent = data.movieTitle;
+  document.querySelector(".transformers-right a").textContent = data.genreType;
+  document.querySelector(".description").textContent = data.movieDescription;
+  document.querySelectorAll(".transformers-right")[4].textContent = data.releaseDate;
+
+  console.log(data.avgRating);
+
+  if (data.avgRating <= 1 && data.avgRating > 0)
+ {
+  document.getElementById("star5").checked = true;
+ }
+ if (data.avgRating <= 2 && data.avgRating > 1)
+ {
+  document.getElementById("star4").checked = true;
+ }
+ if (data.avgRating <= 3 && data.avgRating > 2)
+ {
+  document.getElementById("star3").checked = true;
+ }
+ if (data.avgRating <= 4 && data.avgRating > 3)
+ {
+  document.getElementById("star2").checked = true;
+ }
+ if (data.avgRating <= 5 && data.avgRating > 4)
+ {
+  document.getElementById("star1").checked = true;
+ }
+ 
+
+  if (req.message === "rated") {
+    document.getElementById("rate_btn").style.display="none";
+  }
+
+}
+getMovieById();
+
+
+
+</script>
+
+<script>
+document.getElementById("remove").onclick = function () {
+  const movieId = localStorage.getItem('movieId');
+  
+  const removeBookmark = async () => {
+    
+      let val=await request("DELETE", `http://localhost:9595/watchlist/remove/${movieId}`, true);
+      console.log(val?.data)
+     
+
+      // API request is successful, do something (e.g., show a success message)
+   
+  };
+  
+  removeBookmark();
+  
+
+}
+
+
+
+</script>
+<script>
+document.getElementById("bookmark").onclick = function () {
+  const movieId = localStorage.getItem('movieId');
+
+  const addBookmark = async () => {
+    
+      let val=await request("POST", `http://localhost:9595/watchlist/add/${movieId}`, true);
+      console.log(val)
+      let msg=val?.data
+  document.querySelector(".messageDiv").textContent = msg;
+      // API request is successful, do something (e.g., show a success message)
+   
+  };
+  
+  addBookmark();
+  
+
+}
+
+
+
+</script>
